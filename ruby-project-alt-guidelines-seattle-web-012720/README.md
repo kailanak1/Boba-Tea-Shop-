@@ -1,21 +1,21 @@
 
 BOBA TEA SHOP
 
-##About##
+About
 
 Boba Tea Shop is an app that allows you to order tea (with optional toppings), simulating a Boba Tea Shop (also known as bubble tea).
 
-##Technology Used##
+Technology Used
 
 Ruby 
 ActiveRecord
 
 
-##Features##
+Features
 
 The user can order a tea, order a topping, update their order, cancel their order, or confirm their order. 
 
-##Installation##
+Installation
 
 1) Clone the repo. 
 2) From your terminal, navigate to the Boba Tea Shop folder. 
@@ -23,16 +23,16 @@ The user can order a tea, order a topping, update their order, cancel their orde
     - bundle install
     - rake db:migrate
     - rake db:seed 
-    -run ruby bin/run.rb 
+    - run ruby bin/run.rb 
 4) Enjoy :)
 
-##Author##
+Author
 Kailana Kahawaii 
 
-##Licence##
+Licence
 This project is licensed under the GNU GPL (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-##Acknowledgements##
+Acknowledgements
 
 TTY Prompt gem created by Piotr Murach
 
