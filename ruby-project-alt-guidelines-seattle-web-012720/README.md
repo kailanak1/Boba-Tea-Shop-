@@ -20,7 +20,7 @@ The user can order a tea, order a topping, update their order, cancel their orde
 1) Clone the repo. 
 2) From your terminal, navigate to the Boba Tea Shop folder. 
 3) From your terminal, type:
-    - bundle install to install gems.
+    - bundle install
     - rake db:migrate
     - rake db:seed 
     -run ruby bin/run.rb 
