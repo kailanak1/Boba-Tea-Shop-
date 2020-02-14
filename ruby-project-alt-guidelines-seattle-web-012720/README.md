@@ -22,7 +22,7 @@ The user can order a tea, order a topping, update their order, cancel their orde
     - bundle install 
     - rake db:migrate
     - rake db:seed 
-    - run ruby bin/run.rb 
+    - ruby bin/run.rb
 4) Enjoy :)
 
 ## Author
