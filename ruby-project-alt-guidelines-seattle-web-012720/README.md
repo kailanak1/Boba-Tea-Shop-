@@ -1,5 +1,6 @@
 
 # BOBA TEA SHOP
+a boba tea shop simulator 
 
 ## About
 Boba Tea Shop is an app that allows you to order tea (with optional toppings), simulating a Boba Tea Shop (also known as bubble tea).
