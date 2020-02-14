@@ -27,18 +27,8 @@ coffeejelly = Topping.create(name: "Coffee Jelly", price: 1.50)
 grassjelly = Topping.create(name: "Grass Jelly", price: 1.50)
 
 
-random_drink = Drink.all.sample.id
 
-#Users 
 
-nicole = User.create(name:"Nicole", drink_id: random_drink)
-greg = User.create(name:"Greg", drink_id: random_drink)
-dan = User.create(name: "Dan", drink_id: random_drink)
-ophelia = User.create(name: "Ophelia", drink_id: random_drink)
-william = User.create(name:"William", drink_id: random_drink)
-sam = User.create(name:"Sam", drink_id: random_drink)
-nick = User.create(name:"Nick", drink_id: random_drink)
-dave = User.create(name:"Dave", drink_id: random_drink)
 
 
 
@@ -58,3 +48,16 @@ drink7 = Drink.create(tea_id: random_tea, topping_id: random_topping, total: 5.0
 drink8 = Drink.create(tea_id: random_tea, topping_id: random_topping, total: 5.00)
 drink9 = Drink.create(tea_id: random_tea, topping_id: random_topping, total: 5.00)
 drink10 = Drink.create(tea_id: random_tea, topping_id: random_topping, total: 5.00)
+
+random_drink = Drink.all.sample.id
+
+#Users 
+
+nicole = User.create(name:"Nicole", drink_id: random_drink)
+greg = User.create(name:"Greg", drink_id: random_drink)
+dan = User.create(name: "Dan", drink_id: random_drink)
+ophelia = User.create(name: "Ophelia", drink_id: random_drink)
+william = User.create(name:"William", drink_id: random_drink)
+sam = User.create(name:"Sam", drink_id: random_drink)
+nick = User.create(name:"Nick", drink_id: random_drink)
+dave = User.create(name:"Dave", drink_id: random_drink)
