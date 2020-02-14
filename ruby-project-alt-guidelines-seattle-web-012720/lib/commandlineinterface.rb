@@ -23,22 +23,28 @@ class CommandLineInterface
     end 
 
     ###############################
+    #          QUIT               #
+    #                             #
+    ###############################
+    def quit 
+        puts "Goodbye!"
+        user.destroy 
+        exit 
+    end 
+
+    ###############################
     #            MENU             #
     #          Selection          #
     ###############################
-
+ 
       
     def tea_selection(user)
+
+    
         greet 
        
         prompt = TTY::Prompt.new
 
-        def ask_for_a_name 
-            name = prompt.ask('What is your name?')
-            prompt = TTY::Prompt.new
-            user.name = name 
-        end 
-  
 
         input_1 = prompt.select('Please select a type of tea') do |menu|
           puts "----------------"
@@ -47,7 +53,7 @@ class CommandLineInterface
             menu.choice 'Thai Tea', 3
             menu.choice 'White Tea', 4
             menu.choice 'Wintermelon', 5
-           
+            menu.choice 'Exit', 6
         end 
 
         if input_1 == 1
@@ -60,6 +66,8 @@ class CommandLineInterface
             user.create_tea_order(4)
         elsif input_1 == 5
             user.create_tea_order(5)
+        elsif input_1 == 6
+            quit
         end 
 
         prompt = TTY::Prompt.new
@@ -86,8 +94,9 @@ class CommandLineInterface
             user.create_topping_order(5)
         elsif input_2 == 6
         end 
+      
     end 
-
+   
 
     def order_confirmation(user)
         prompt = TTY::Prompt.new
@@ -107,10 +116,12 @@ class CommandLineInterface
                 puts "You ordered #{user.drink.tea.name} with #{user.drink.topping.name}."
                 total = user.drink.tea.price + user.drink.topping.price
                 puts "Your total comes out to $#{total}0. Thank you for visiting."
+                go_back
             else
                 puts "You ordered #{user.drink.tea.name}."
                 total = user.drink.tea.price 
                 puts "Your total comes out to $#{total}0. Thank you for visiting."
+                go_back
             end 
 
         elsif input_3 == 2
@@ -118,9 +129,9 @@ class CommandLineInterface
            confirm_w_update
         elsif input_3 == 3
             puts "Your order has been cancelled."
-            user.destroy 
+            quit 
         end
-
+       
 
     end 
 
@@ -128,7 +139,14 @@ class CommandLineInterface
         order_confirmation(user)
     end 
 
-    
+    def go_back
+        tea_selection(user) 
+        order_confirmation(user)
+    end 
+
+   
+
+
     
     ####CLASS END####
     end 
