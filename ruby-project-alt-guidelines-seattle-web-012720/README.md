@@ -47,3 +47,6 @@ https://github.com/splendeo/activerecord-reset-pk-sequence
 
 ## Video Tutorial 
 https://drive.google.com/file/d/1HBoDj44qI1W3XCIGvpDMkT66nUq9B_50/view?usp=sharing
+
+## Slides Presenation 
+https://docs.google.com/presentation/d/1lTfBZmSV9f3p9baYXtD75k95fcC-Og8o1kpStX39yOs/edit?usp=sharing
