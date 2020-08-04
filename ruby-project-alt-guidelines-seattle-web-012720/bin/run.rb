@@ -13,7 +13,7 @@ def user
     User.last 
 end
 
-
+cli.greet 
 cli.tea_selection(user)
 cli.order_confirmation(user)
 

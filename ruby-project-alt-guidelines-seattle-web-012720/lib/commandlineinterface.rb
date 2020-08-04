@@ -11,23 +11,23 @@ class CommandLineInterface
     ###############################
     def greet
         puts "
-                                                                                          
-                                                                                          
-        Welcome to Boba Tea Shop 
-
-        "
-                                                                                                 
-                                                                                                 
-                                                                                                 
-       
-    end 
+        
+        Welcome to Boba Tea Shop
+        
+        "                                                                                       
+    end
+   
 
     ###############################
-    #          QUIT               #
+    #            QUIT             #
     #                             #
     ###############################
     def quit 
-        puts "Goodbye!"
+        puts "
+        
+        Goodbye!
+        
+        "
         user.destroy 
         exit 
     end 
@@ -41,7 +41,7 @@ class CommandLineInterface
     def tea_selection(user)
 
     
-        greet 
+      
        
         prompt = TTY::Prompt.new
 
@@ -113,14 +113,30 @@ class CommandLineInterface
 
         if input_3 == 1
             if user.drink.topping_id != nil
-                puts "You ordered #{user.drink.tea.name} with #{user.drink.topping.name}."
+                puts "
+                
+                You ordered #{user.drink.tea.name} with #{user.drink.topping.name}.
+                
+                "
                 total = user.drink.tea.price + user.drink.topping.price
-                puts "Your total comes out to $#{total}0. Thank you for visiting."
+                puts "
+                Your total comes out to $#{total}0. Thank you for visiting.
+                
+                
+                "
                 go_back
             else
-                puts "You ordered #{user.drink.tea.name}."
+                puts "
+                
+                You ordered #{user.drink.tea.name}.
+                
+                "
                 total = user.drink.tea.price 
-                puts "Your total comes out to $#{total}0. Thank you for visiting."
+                puts "
+                Your total comes out to $#{total}0. Thank you for visiting.
+                
+                
+                "
                 go_back
             end 
 
@@ -128,7 +144,11 @@ class CommandLineInterface
            tea_selection(user) 
            confirm_w_update
         elsif input_3 == 3
-            puts "Your order has been cancelled."
+            puts "
+            
+            Your order has been cancelled.
+            
+            "
             quit 
         end
        

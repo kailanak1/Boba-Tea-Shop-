@@ -9,3 +9,5 @@ gem "require_all"
 gem "faker"
 gem 'tty-prompt'
 gem 'activerecord-reset-pk-sequence'
+gem "rack", ">= 2.1.4"
+gem "activesupport", ">= 5.2.4.3"
